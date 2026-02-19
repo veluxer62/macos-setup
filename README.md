@@ -49,3 +49,6 @@ git config --global user.email "veluxer62@gmail.com"
 ```bash
 git config --global core.editor "code --wait"
 ```
+```bash
+git config maintenance.worktree-prune.enabled true
+```
