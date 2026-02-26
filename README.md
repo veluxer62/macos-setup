@@ -38,6 +38,14 @@ brew install git
 brew install gh
 ```
 
+### GW
+
+```bash
+git clone https://github.com/eezy0/gw
+cd gw
+./install.sh
+```
+
 ## GIT 설정
 
 ```bash
