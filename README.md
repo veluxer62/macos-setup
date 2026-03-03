@@ -60,3 +60,25 @@ git config --global core.editor "code --wait"
 ```bash
 git config maintenance.worktree-prune.enabled true
 ```
+
+## Ghostty 설정
+
+### Toggle the quick terminal
+
+https://ghostty.org/docs/config/keybind/reference#toggle_quick_terminal
+
+```
+# ~/Library/Application\ Support/com.mitchellh.ghostty/config
+
+keybind = global:cmd+backquote=toggle_quick_terminal
+```
+
+### The position of the "quick" terminal window.
+
+https://ghostty.org/docs/config/reference#quick-terminal-position
+
+```
+# ~/Library/Application\ Support/com.mitchellh.ghostty/config
+
+quick-terminal-position = bottom
+```
