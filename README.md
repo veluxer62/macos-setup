@@ -93,3 +93,48 @@ plugins=(git zsh-autosuggestions)
 ```bash
 source ~/.zshrc
 ```
+
+## 5. LazyVim 설정
+
+### 5-1. Neovim 설치
+
+```bash
+brew install neovim
+```
+
+### 5-2. 기존 Neovim 설정 백업
+
+```bash
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+```
+
+### 5-3. LazyVim Starter 설치
+
+```bash
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+```
+
+### 5-4. 실행
+
+```bash
+nvim
+```
+
+### 5-5. `vim` alias 설정
+
+- `~/.zshrc`에 아래 내용을 추가합니다.
+
+```bash
+alias vim='nvim'
+alias vi='nvim'
+```
+
+- 설정 반영:
+
+```bash
+source ~/.zshrc
+```
