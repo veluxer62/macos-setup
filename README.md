@@ -1,44 +1,43 @@
-이 문서는 macOS를 새로 설치한 뒤 개발/업무 환경을 빠르게 세팅하기 위한 기본 설정을 정리합니다.
+# macOS Setup
 
-## 설치
+macOS를 새로 설치한 뒤, 개발/업무 환경을 빠르게 구성하기 위한 기본 설정 가이드입니다.
 
-### brew
+## 1. 설치
 
-https://github.com/Homebrew/brew
+### 1-1. Homebrew
+- 공식 저장소: [Homebrew](https://github.com/Homebrew/brew)
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### Oh My ZSH
-
-https://github.com/ohmyzsh/ohmyzsh/
+### 1-2. Oh My ZSH
+- 공식 저장소: [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Ghostty
-
-https://github.com/ghostty-org/ghostty
+### 1-3. Ghostty
+- 공식 저장소: [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty)
 
 ```bash
 brew install --cask ghostty
 ```
 
-### GIT
+### 1-4. Git
 
-```
+```bash
 brew install git
 ```
 
-### GIT cli
+### 1-5. GitHub CLI
 
 ```bash
 brew install gh
 ```
 
-### GW
+### 1-6. GW
 
 ```bash
 git clone https://github.com/eezy0/gw
@@ -46,39 +45,29 @@ cd gw
 ./install.sh
 ```
 
-## GIT 설정
+## 2. Git 설정
 
 ```bash
 git config --global user.name "veluxer62"
-```
-```bash
 git config --global user.email "veluxer62@gmail.com"
-```
-```bash
 git config --global core.editor "code --wait"
-```
-```bash
 git config maintenance.worktree-prune.enabled true
 ```
 
-## Ghostty 설정
+## 3. Ghostty 설정
 
-### Toggle the quick terminal
+- 설정 파일 경로: `~/Library/Application Support/com.mitchellh.ghostty/config`
 
-https://ghostty.org/docs/config/keybind/reference#toggle_quick_terminal
+### 3-1. Quick Terminal 토글 단축키
+- 문서: [toggle_quick_terminal](https://ghostty.org/docs/config/keybind/reference#toggle_quick_terminal)
 
-```
-# ~/Library/Application\ Support/com.mitchellh.ghostty/config
-
+```text
 keybind = global:cmd+backquote=toggle_quick_terminal
 ```
 
-### The position of the "quick" terminal window.
+### 3-2. Quick Terminal 위치
+- 문서: [quick-terminal-position](https://ghostty.org/docs/config/reference#quick-terminal-position)
 
-https://ghostty.org/docs/config/reference#quick-terminal-position
-
-```
-# ~/Library/Application\ Support/com.mitchellh.ghostty/config
-
+```text
 quick-terminal-position = bottom
 ```
