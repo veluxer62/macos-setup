@@ -71,3 +71,25 @@ keybind = global:cmd+backquote=toggle_quick_terminal
 ```text
 quick-terminal-position = bottom
 ```
+
+## 4. Oh My ZSH 자동완성 설정
+
+### 4-1. `zsh-autosuggestions` 설치
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+### 4-2. `.zshrc` 플러그인 등록
+
+- `~/.zshrc`의 `plugins` 항목에 `zsh-autosuggestions`를 추가합니다.
+
+```text
+plugins=(git zsh-autosuggestions)
+```
+
+### 4-3. 적용
+
+```bash
+source ~/.zshrc
+```
