@@ -45,6 +45,14 @@ cd gw
 ./install.sh
 ```
 
+### 1-6 Iterm2
+
+- 공식 페이지: https://iterm2.com/index.html
+
+```bash
+brew install iterm2
+```
+
 ## 2. Git 설정
 
 ```bash
@@ -86,6 +94,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ```text
 plugins=(git zsh-autosuggestions)
+```
+
+### 테마 변경
+
+- `~/.zshrc`에서 `ZSH_THEME` 항목에 `agnoster` 를 설정합니다.
+
+```text
+ZSH_THEME="agnoster"
 ```
 
 ### 4-3. 적용
@@ -138,3 +154,42 @@ alias vi='nvim'
 ```bash
 source ~/.zshrc
 ```
+
+## 6. Iterm 설정
+
+### 6-1. font 설정
+
+- 저장소: https://github.com/powerline/fonts
+
+```bash
+# install
+cd ~/workspace
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+
+# clean-up a bit
+cd ..
+rm -rf fonts
+```
+
+- 적용 방법: `cmd+,` -> `Profile` -> `Text` -> `Font`
+
+### 6-2. 테마 변경
+
+- 저장소: https://iterm2colorschemes.com/
+
+```bash
+mkdir ~/.config/iterm2/theme && cd ~/.config/iterm2/theme
+curl -LO https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Snazzy.itermcolors
+```
+
+- 적용 방법: `cmd+,` -> `Profile` -> `Colors` -> `Color Presets` -> `Import...` -> `Snazzy.itermcolors` 선택 -> `Color Presets` -> `snazzy` 선택
+
+### 6-3. Smart Selection + Copy
+
+- 적용 방법: `cmd+,` -> `General` -> `Selection` -> `Double-click performs smart select` 체크
+
+### 6-4. Enable Python API
+
+- 적용 방법: `cmd+,` -> `General` -> `Magic` -> `Enable Python API` 체크
