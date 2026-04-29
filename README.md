@@ -80,6 +80,10 @@ keybind = global:cmd+backquote=toggle_quick_terminal
 quick-terminal-position = bottom
 ```
 
+### 그외
+
+- 블로그 참고: https://blog.dnd.ac/settings-mac-terminal-2026/
+
 ## 4. Oh My ZSH 자동완성 설정
 
 ### 4-1. `zsh-autosuggestions` 설치
