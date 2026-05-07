@@ -59,7 +59,8 @@ brew install iterm2
 git config --global user.name "veluxer62"
 git config --global user.email "veluxer62@gmail.com"
 git config --global core.editor "code --wait"
-git config maintenance.worktree-prune.enabled true
+git config --global maintenance.worktree-prune.enabled true
+git config --global pull.ff only
 ```
 
 ## 3. Ghostty 설정
