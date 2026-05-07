@@ -298,6 +298,7 @@ else
   warn "VS Code 설치 후 직접 설정하세요: git config --global core.editor \"code --wait\""
 fi
 git config --global maintenance.worktree-prune.enabled true
+git config --global pull.ff only
 
 success "Git 전역 설정 완료"
 
